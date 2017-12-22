@@ -1,21 +1,20 @@
-<h1>登录</h1>
- 
+<h1 align="center">Public Works Department Repair System</h1>
 <% if flash[:login_error] %>
-  <p><%= flash[:login_error] %></p>
+  <p align="center"><%= flash[:login_error] %></p>
 <% end %>
  
 <%= form_for :session, url: :sessions_create do |f| %>
  
-  <p>
-    <%= f.label :姓名 %>
+  <p align="center">
+    <%= f.label :name %>
     <%= f.text_field :name %>
   </p>
  
-  <p>
-    <%= f.label :密码 %>
+  <p align="center">
+    <%= f.label :password %>
     <%= f.password_field :password %>
   </p>
  
-  <p><%= f.button "登录" %></p>
+  <p align="center"><%= f.button "login" %></p>
  
 <% end %>

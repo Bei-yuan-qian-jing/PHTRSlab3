@@ -1,7 +1,7 @@
 <!-- app/views/applicants/new.html.erb -->
-<h1 align="center">Sign in</h1> 
+<h1 align="center">Sign up</h1> 
 <% if @user.errors.any? %>
-<ul>
+<ul  align="center">
   <% @user.errors.full_messages.each do |message| %>
   <li align="center"><%= message %></li>
   <% end %>
@@ -26,3 +26,4 @@
  
   <p align="center"><%= f.button "submit" %>
 <% end %>
+ <p align="center"><%= link_to "Sign in", sessions_new_path %>

@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :potholelists
   get 'sessions/new'
 
   post 'sessions/create'

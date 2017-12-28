@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Id:</strong>
+  <%= @potholelist.id %>
+</p>
+
+<p>
+  <strong>Address:</strong>
+  <%= @potholelist.address %>
+</p>
+
+<p>
+  <strong>Size:</strong>
+  <%= @potholelist.size %>
+</p>
+
+<p>
+  <strong>Location:</strong>
+  <%= @potholelist.location %>
+</p>
+
+<p>
+  <strong>District:</strong>
+  <%= @potholelist.district %>
+</p>
+
+<p>
+  <strong>Priority:</strong>
+  <%= @potholelist.priority %>
+</p>
+
+<%= link_to 'Edit', edit_potholelist_path(@potholelist) %> |
+<%= link_to 'Back', potholelists_path %>

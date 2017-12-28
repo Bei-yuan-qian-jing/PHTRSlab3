@@ -1,0 +1,2 @@
+class Potholelist < ApplicationRecord
+end

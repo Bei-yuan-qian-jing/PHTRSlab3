@@ -1,0 +1,47 @@
+<%= form_with(model: potholelist, local: true) do |form| %>
+  <% if potholelist.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(potholelist.errors.count, "error") %> prohibited this potholelist from being saved:</h2>
+
+      <ul>
+      <% potholelist.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :id %>
+    <%= form.number_field :id, id: :potholelist_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :address %>
+    <%= form.text_field :address, id: :potholelist_address %>
+  </div>
+
+  <div class="field">
+    <%= form.label :size %>
+    <%= form.number_field :size, id: :potholelist_size %>
+  </div>
+
+  <div class="field">
+    <%= form.label :location %>
+    <%= form.text_field :location, id: :potholelist_location %>
+  </div>
+
+  <div class="field">
+    <%= form.label :district %>
+    <%= form.text_field :district, id: :potholelist_district %>
+  </div>
+
+  <div class="field">
+    <%= form.label :priority %>
+    <%= form.number_field :priority, id: :potholelist_priority %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

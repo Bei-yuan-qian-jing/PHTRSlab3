@@ -12,18 +12,14 @@
   <% end %>
 
   <div class="field">
-    <%= form.label :id %>
-    <%= form.number_field :id, id: :potholelist_id %>
-  </div>
-
-  <div class="field">
     <%= form.label :address %>
     <%= form.text_field :address, id: :potholelist_address %>
   </div>
 
+
   <div class="field">
     <%= form.label :size %>
-    <%= form.number_field :size, id: :potholelist_size %>
+    <%= form.number_field :size, id: :potholelist_size  %>
   </div>
 
   <div class="field">
@@ -31,6 +27,7 @@
     <%= form.text_field :location, id: :potholelist_location %>
   </div>
 
+  
   <div class="field">
     <%= form.label :district %>
     <%= form.text_field :district, id: :potholelist_district %>
@@ -40,6 +37,7 @@
     <%= form.label :priority %>
     <%= form.number_field :priority, id: :potholelist_priority %>
   </div>
+  
 
   <div class="actions">
     <%= form.submit %>

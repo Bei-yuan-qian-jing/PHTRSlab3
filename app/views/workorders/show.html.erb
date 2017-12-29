@@ -1,0 +1,49 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Location:</strong>
+  <%= @workorder.location %>
+</p>
+
+<p>
+  <strong>Size:</strong>
+  <%= @workorder.size %>
+</p>
+
+<p>
+  <strong>Crew id:</strong>
+  <%= @workorder.crew_ID %>
+</p>
+
+<p>
+  <strong>Peoplenumber:</strong>
+  <%= @workorder.peoplenumber %>
+</p>
+
+<p>
+  <strong>Assign equipment:</strong>
+  <%= @workorder.assign_equipment %>
+</p>
+
+<p>
+  <strong>Time:</strong>
+  <%= @workorder.time %>
+</p>
+
+<p>
+  <strong>Status:</strong>
+  <%= @workorder.status %>
+</p>
+
+<p>
+  <strong>Material used:</strong>
+  <%= @workorder.material_used %>
+</p>
+
+<p>
+  <strong>Cost:</strong>
+  <%= @workorder.cost %>
+</p>
+
+<%= link_to 'Edit', edit_workorder_path(@workorder) %> |
+<%= link_to 'Back', workorders_path %>

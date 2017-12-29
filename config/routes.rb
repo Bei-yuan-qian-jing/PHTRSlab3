@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :workorders
   resources :potholelists
   get 'sessions/new'
 

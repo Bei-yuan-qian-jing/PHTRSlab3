@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  location: MyString
+  size: 1
+  crew_ID: MyString
+  peoplenumber: 1
+  assign_equipment: MyText
+  time: 
+  status: MyString
+  material_used: 
+  cost: 
+
+two:
+  location: MyString
+  size: 1
+  crew_ID: MyString
+  peoplenumber: 1
+  assign_equipment: MyText
+  time: 
+  status: MyString
+  material_used: 
+  cost: 

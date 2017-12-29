@@ -1,0 +1,62 @@
+<%= form_with(model: workorder, local: true) do |form| %>
+  <% if workorder.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(workorder.errors.count, "error") %> prohibited this workorder from being saved:</h2>
+
+      <ul>
+      <% workorder.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :location %>
+    <%= form.text_field :location, id: :workorder_location %>
+  </div>
+
+  <div class="field">
+    <%= form.label :size %>
+    <%= form.number_field :size, id: :workorder_size %>
+  </div>
+
+  <div class="field">
+    <%= form.label :crew_ID %>
+    <%= form.text_field :crew_ID, id: :workorder_crew_ID %>
+  </div>
+
+  <div class="field">
+    <%= form.label :peoplenumber %>
+    <%= form.number_field :peoplenumber, id: :workorder_peoplenumber %>
+  </div>
+
+  <div class="field">
+    <%= form.label :assign_equipment %>
+    <%= form.text_area :assign_equipment, id: :workorder_assign_equipment %>
+  </div>
+
+  <div class="field">
+    <%= form.label :time %>
+    <%= form.text_field :time, id: :workorder_time %>
+  </div>
+
+  <div class="field">
+    <%= form.label :status %>
+    <%= form.text_field :status, id: :workorder_status %>
+  </div>
+
+  <div class="field">
+    <%= form.label :material_used %>
+    <%= form.text_field :material_used, id: :workorder_material_used %>
+  </div>
+
+  <div class="field">
+    <%= form.label :cost %>
+    <%= form.text_field :cost, id: :workorder_cost %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

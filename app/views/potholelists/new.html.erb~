@@ -1,4 +1,4 @@
-<h1>New Pothole list</h1>
+<h1>New Potholelist</h1>
 
 <%= render 'form', potholelist: @potholelist %>
 

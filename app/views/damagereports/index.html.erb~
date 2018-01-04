@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Damagereports</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Address</th>
+      <th>Tel</th>
+      <th>Type</th>
+      <th>Cost</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @damagereports.each do |damagereport| %>
+      <tr>
+        <td><%= damagereport.name %></td>
+        <td><%= damagereport.address %></td>
+        <td><%= damagereport.tel %></td>
+        <td><%= damagereport.type %></td>
+        <td><%= damagereport.cost %></td>
+        <td><%= link_to 'Show', damagereport %></td>
+        <td><%= link_to 'Edit', edit_damagereport_path(damagereport) %></td>
+        <td><%= link_to 'Destroy', damagereport, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Damagereport', new_damagereport_path %>

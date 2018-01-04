@@ -1,0 +1,2 @@
+class Damagereport < ApplicationRecord
+end

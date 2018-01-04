@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @damagereport.name %>
+</p>
+
+<p>
+  <strong>Address:</strong>
+  <%= @damagereport.address %>
+</p>
+
+<p>
+  <strong>Tel:</strong>
+  <%= @damagereport.tel %>
+</p>
+
+<p>
+  <strong>Type:</strong>
+  <%= @damagereport.type %>
+</p>
+
+<p>
+  <strong>Cost:</strong>
+  <%= @damagereport.cost %>
+</p>
+
+<%= link_to 'Edit', edit_damagereport_path(@damagereport) %> |
+<%= link_to 'Back', damagereports_path %>

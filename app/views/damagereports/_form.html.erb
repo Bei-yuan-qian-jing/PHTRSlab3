@@ -1,0 +1,42 @@
+<%= form_with(model: damagereport, local: true) do |form| %>
+  <% if damagereport.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(damagereport.errors.count, "error") %> prohibited this damagereport from being saved:</h2>
+
+      <ul>
+      <% damagereport.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :name %>
+    <%= form.text_field :name, id: :damagereport_name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :address %>
+    <%= form.text_field :address, id: :damagereport_address %>
+  </div>
+
+  <div class="field">
+    <%= form.label :tel %>
+    <%= form.text_field :tel, id: :damagereport_tel %>
+  </div>
+
+  <div class="field">
+    <%= form.label :type %>
+    <%= form.text_field :type, id: :damagereport_type %>
+  </div>
+
+  <div class="field">
+    <%= form.label :cost %>
+    <%= form.text_field :cost, id: :damagereport_cost %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

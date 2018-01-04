@@ -1,5 +1,6 @@
-<h1>New Pothole list</h1>
+<h1>Editing Potholelist</h1>
 
 <%= render 'form', potholelist: @potholelist %>
 
+<%= link_to 'Show', @potholelist %> |
 <%= link_to 'Back', potholelists_path %>

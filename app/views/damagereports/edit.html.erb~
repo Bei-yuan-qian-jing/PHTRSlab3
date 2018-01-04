@@ -1,0 +1,6 @@
+<h1>Editing Damagereport</h1>
+
+<%= render 'form', damagereport: @damagereport %>
+
+<%= link_to 'Show', @damagereport %> |
+<%= link_to 'Back', damagereports_path %>
